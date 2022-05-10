@@ -1,0 +1,278 @@
+dell@DESKTOP-2D0A7NR MINGW64 ~
+$ cd Desktop/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ mkdir 10May2022
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ cd 10Mat2022
+bash: cd: 10Mat2022: No such file or directory
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ cd 10May2022
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022
+$ git init
+Initialized empty Git repository in C:/Users/dell/Desktop/10May2022/.git/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ ls -al
+total 8
+drwxr-xr-x 1 dell 197121 0 May 10 10:45 ./
+drwxr-xr-x 1 dell 197121 0 May 10 10:45 ../
+drwxr-xr-x 1 dell 197121 0 May 10 10:45 .git/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ vi first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ cat first.txt
+Git Session 10 May
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ ls
+first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git add first.txt
+warning: LF will be replaced by CRLF in first.txt.
+The file will have its original line endings in your working directory
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   first.txt
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ touch ex1.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   first.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ex1.txt
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git config --global user.name "anusha"
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git config --global user.email "anusha.j@thundersoft.com"
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git commit -m "Adding first.txt"
+[master (root-commit) dc184a2] Adding first.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git log
+commit dc184a2d7020b56586f98d85bebf01592d4452c1 (HEAD -> master)
+Author: anusha <anusha.j@thundersoft.com>
+Date:   Tue May 10 11:11:55 2022 +0530
+
+    Adding first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git remote add origin "https://github.com/Anusha-17/10May2022.git"
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 233 bytes | 233.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Anusha-17/10May2022.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ ls
+ex1.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ cd ..
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ mkdir class
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ cd class
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class
+$ git init
+Initialized empty Git repository in C:/Users/dell/Desktop/class/.git/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class (master)
+$ cd ..
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ cd class
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class (master)
+$ ls -al
+total 8
+drwxr-xr-x 1 dell 197121 0 May 10 11:37 ./
+drwxr-xr-x 1 dell 197121 0 May 10 11:37 ../
+drwxr-xr-x 1 dell 197121 0 May 10 11:37 .git/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class (master)
+$ rm -rf .git
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class
+$ ls -al
+total 4
+drwxr-xr-x 1 dell 197121 0 May 10 11:38 ./
+drwxr-xr-x 1 dell 197121 0 May 10 11:37 ../
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class
+$ git clone "https://github.com/Anusha-17/10May2022.git"
+Cloning into '10May2022'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class
+$ ls
+10May2022/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class
+$ cd 10May2022/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ ls -al
+total 5
+drwxr-xr-x 1 dell 197121  0 May 10 11:39 ./
+drwxr-xr-x 1 dell 197121  0 May 10 11:39 ../
+drwxr-xr-x 1 dell 197121  0 May 10 11:39 .git/
+-rw-r--r-- 1 dell 197121 20 May 10 11:39 first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ touch password.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        password.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ vim .gitignore
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git add .gitignore
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git commit -m "added .gitignore.txt file"
+[master 66f3eed] added .gitignore.txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git log
+commit 66f3eedfa96da9a884bdc5cc0dc35afbe6130871 (HEAD -> master)
+Author: anusha <anusha.j@thundersoft.com>
+Date:   Tue May 10 11:45:27 2022 +0530
+
+    added .gitignore.txt file
+
+commit dc184a2d7020b56586f98d85bebf01592d4452c1 (origin/master, origin/HEAD)
+Author: anusha <anusha.j@thundersoft.com>
+Date:   Tue May 10 11:11:55 2022 +0530
+
+    Adding first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ ls
+first.txt  password.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ vi 1.html
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ ls
+1.html  first.txt  password.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ vi 2.py
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ ls
+1.html  2.py  first.txt  password.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ vi .gitignore
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ ls
+1.html  2.py  first.txt  password.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/class/10May2022 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
