@@ -1,0 +1,323 @@
+dell@DESKTOP-2D0A7NR MINGW64 ~
+$ cd Desktop
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ ls
+ 10May2022/                         'Microsoft Edge.lnk'*   mockc.c
+ Bannysha-DS.docx                    Vysor.lnk*             mockc.exe*
+ Dev-C++.lnk*                        class/                 mockc1.c
+'Free Screen Recorder 10.6.0.lnk'*   desktop.ini            mockc1.exe*
+ Git_Commands-10May2022.txt          funpointer.c           version/
+ Lark.lnk*                           funpointer.exe*
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ cd 10May2022
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ ls
+ex1.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git branch branch_one
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git branch
+  branch_one
+* master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git checkout branch_one
+Switched to branch 'branch_one'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (branch_one)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git branch -D branch_one
+Deleted branch branch_one (was dc184a2).
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git branch
+* master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git show
+commit dc184a2d7020b56586f98d85bebf01592d4452c1 (HEAD -> master, origin/master)
+Author: anusha <anusha.j@thundersoft.com>
+Date:   Tue May 10 11:11:55 2022 +0530
+
+    Adding first.txt
+
+diff --git a/first.txt b/first.txt
+new file mode 100644
+index 0000000..2e03577
+--- /dev/null
++++ b/first.txt
+@@ -0,0 +1 @@
++Git Session 10 May
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git checkout -b b1
+Switched to a new branch 'b1'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (b1)
+$ git branch
+* b1
+  master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (b1)
+$ git log --oneline
+dc184a2 (HEAD -> b1, origin/master, master) Adding first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (b1)
+$ git show ^C
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (b1)
+$ git show dc184a2
+commit dc184a2d7020b56586f98d85bebf01592d4452c1 (HEAD -> b1, origin/master, master)
+Author: anusha <anusha.j@thundersoft.com>
+Date:   Tue May 10 11:11:55 2022 +0530
+
+    Adding first.txt
+
+diff --git a/first.txt b/first.txt
+new file mode 100644
+index 0000000..2e03577
+--- /dev/null
++++ b/first.txt
+@@ -0,0 +1 @@
++Git Session 10 May
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (b1)
+$ git checkout b1
+Already on 'b1'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (b1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ ls
+ex1.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ vi base.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ cat base.c
+Jupally
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git add base.c
+warning: LF will be replaced by CRLF in base.c.
+The file will have its original line endings in your working directory
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   base.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ex1.txt
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ vi base.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ cat base.c
+Jupally
+Anusha
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git diff
+warning: LF will be replaced by CRLF in base.c.
+The file will have its original line endings in your working directory
+diff --git a/base.c b/base.c
+index 13ee96d..060ee8e 100644
+--- a/base.c
++++ b/base.c
+@@ -1 +1,2 @@
+ Jupally
++Anusha
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git commit -m "base.c has updated"
+[master 4f110b8] base.c has updated
+ 1 file changed, 1 insertion(+)
+ create mode 100644 base.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ vi base.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git add base.c
+warning: LF will be replaced by CRLF in base.c.
+The file will have its original line endings in your working directory
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git diff --cached
+diff --git a/base.c b/base.c
+index 13ee96d..7c573c4 100644
+--- a/base.c
++++ b/base.c
+@@ -1 +1,3 @@
+ Jupally
++Anusha
++Anu
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ cd ..
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ cd 10May2022
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ git clone https://github.com/Anusha-17/10May2022.git
+Cloning into '10May2022'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ ls
+10May2022/  base.c  ex1.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ ls
+10May2022/  base.c  ex1.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/10May2022 (master)
+$ cd ..
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ mkdir 16May2022
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ cd 16May2022
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022
+$ git init
+Initialized empty Git repository in C:/Users/dell/Desktop/16May2022/.git/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ git pull https://github.com/Anusha-17/10May2022.git
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 2.31 KiB | 4.00 KiB/s, done.
+From https://github.com/Anusha-17/10May2022
+ * branch            HEAD       -> FETCH_HEAD
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ ls
+Git_Commands-10May2022.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ git branch New_branch
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ git checkout New_branch
+Switched to branch 'New_branch'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ ls
+Git_Commands-10May2022.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ cat first.txt
+Git Session 10 May
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ vi first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git add first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git status
+On branch New_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first.txt
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ cat first.txt
+Git Session 10 May
+Git practice 16 May
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git checkout master
+Switched to branch 'master'
+M       first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ ls
+Git_Commands-10May2022.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ cat first.txt
+Git Session 10 May
+Git practice 16 May
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ git checkout New_branch
+Switched to branch 'New_branch'
+M       first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ ls
+Git_Commands-10May2022.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git commit -m "First.txt is updated"
+[New_branch 946230e] First.txt is updated
+ 1 file changed, 1 insertion(+)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git status
+On branch New_branch
+nothing to commit, working tree clean
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git add first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git status
+On branch New_branch
+nothing to commit, working tree clean
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git checkout New_branch
+Already on 'New_branch'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (New_branch)
+$ git checkout master
+Switched to branch 'master'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ ls
+Git_Commands-10May2022.txt  first.txt
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$ git fetch origin/master
+fatal: 'origin/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/16May2022 (master)
+$
