@@ -1,0 +1,2310 @@
+dell@DESKTOP-2D0A7NR MINGW64 ~
+$ cd Desktop
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop
+$ cd 11May2022
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 ((d46e94c...))
+$ ls
+file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 ((d46e94c...))
+$ git checkout b2
+error: pathspec 'b2' did not match any file(s) known to git
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 ((d46e94c...))
+$ git checkout b1
+Switched to branch 'b1'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git branch -d b1
+Deleted branch b1 (was d46e94c).
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git branch
+* master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/dell/Desktop/11May2022/.git/
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ ls
+file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git branch b1
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git branch
+  b1
+* master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git checkout b1
+Switched to branch 'b1'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ git branch
+* b1
+  master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git checkout -b b2
+Switched to a new branch 'b2'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b2)
+$ git branch
+  b1
+* b2
+  master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git branch
+  b1
+  b2
+* master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git branch -d b2
+Deleted branch b2 (was d46e94c).
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git branch
+  b1
+* master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ ls
+file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c
+Git Session 11 May
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git checkout b1
+Switched to branch 'b1'
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ git log
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc (HEAD -> b1, origin/master, master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ ls
+file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ vi file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ git add file.c
+warning: LF will be replaced by CRLF in file.c.
+The file will have its original line endings in your working directory
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ git commit -m "Updating the file.c"
+[b1 18de0c9] Updating the file.c
+ 1 file changed, 1 insertion(+)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ git log
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (HEAD -> b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc (origin/master, master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (b1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc (HEAD -> master, origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c
+Git Session 11 May
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git merge b1
+Updating d46e94c..18de0c9
+Fast-forward
+ file.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (HEAD -> master, b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c
+Git Session 11 May
+Updated file
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (HEAD -> master, b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Anusha-17/11May2022.git
+   d46e94c..18de0c9  master -> master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (HEAD -> master, origin/master, b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git fetch origin master
+From https://github.com/Anusha-17/11May2022
+ * branch            master     -> FETCH_HEAD
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git merge origin/master
+Already up to date.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git fetch origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 683 bytes | 6.00 KiB/s, done.
+From https://github.com/Anusha-17/11May2022
+ * branch            master     -> FETCH_HEAD
+   18de0c9..ffc52f0  master     -> origin/master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git merge origin/master
+Updating 18de0c9..ffc52f0
+Fast-forward
+ file.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c
+Git Session 11 May
+Updated file
+Changes are made in remote repository
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git pull origin master
+From https://github.com/Anusha-17/11May2022
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 656 bytes | 3.00 KiB/s, done.
+From https://github.com/Anusha-17/11May2022
+ * branch            master     -> FETCH_HEAD
+   ffc52f0..9580af8  master     -> origin/master
+Updating ffc52f0..9580af8
+Fast-forward
+ file.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c
+Git Session 11 May
+Updated file
+Changes are made in remote repository
+Pull the changes
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+...skipping...
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+...skipping...
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+...skipping...
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+...skipping...
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)...skipping...
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)      1 [sig] bash 1071! sigpacket::process: Suppressing signal 18 to win32 process (pid 2564)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)1311495 [sig] bash 1071! sigpacket::process: Suppressing signal 18 to win32 process (pid 2564)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)3331891 [sig] bash 1071! sigpacket::process: Suppressing signal 18 to win32 process (pid 2564)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)4687771 [sig] bash 1071! sigpacket::process: Suppressing signal 18 to win32 process (pid 2564)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)20127930 [sig] bash 1071! sigpacket::process: Suppressing signal 18 to win32 process (pid 2564)
+                                                                                                    20138547 [sig] bash 1071! sigpacket::process: Suppressing signal 18 to win32 process (pid 2564)
+   20142812 [sig] bash 1071! sigpacket::process: Suppressing signal 18 to win32 process (pid 2564)
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+vi file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git add file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.c
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git commit -m "new commit"
+[master 86af2e1] new commit
+ 1 file changed, 1 insertion(+)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 86af2e19d49081656a51d7d04256a934e1d6005e (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+:      1 [sig] bash 1102! sigpacket::process: Suppressing signal 18 to win32 process (pid 7716)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+:1422610 [sig] bash 1102! sigpacket::process: Suppressing signal 18 to win32 process (pid 7716)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+:2055813 [sig] bash 1102! sigpacket::process: Suppressing signal 18 to win32 process (pid 7716)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+:2713289 [sig] bash 1102! sigpacket::process: Suppressing signal 18 to win32 process (pid 7716)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+:3247885 [sig] bash 1102! sigpacket::process: Suppressing signal 18 to win32 process (pid 7716)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+:3897002 [sig] bash 1102! sigpacket::process: Suppressing signal 18 to win32 process (pid 7716)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+:
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+commit 86af2e19d49081656a51d7d04256a934e1d6005e (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:03:27 2022 +0530
+
+    new commit
+
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+^C
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git reset --mixed HEAD~1
+Unstaged changes after reset:
+M       file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c
+Git Session 11 May
+Updated file
+Changes are made in remote repository
+Pull the changes
+C DS OS
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+:      1 [sig] bash 1138! sigpacket::process: Suppressing signal 18 to win32 process (pid 9888)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)4518255 [sig] bash 1138! sigpacket::process: Suppressing signal 18 to win32 process (pid 9888)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+s
+bash: s: command not found
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ ls
+file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ vi  file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git add file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.c
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git commit -m "Soft reset"
+[master 498f789] Soft reset
+ 1 file changed, 2 insertions(+)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 498f789d92db0b24c1bc5218a6334d0fecf1760a (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:07:23 2022 +0530
+
+    Soft reset
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+:      0 [sig] bash 1181! sigpacket::process: Suppressing signal 18 to win32 process (pid 8964)
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+:1104871 [sig] bash 1181! sigpacket::process: Suppressing signal 18 to win32 process (pid 8964)
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+:
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+commit 498f789d92db0b24c1bc5218a6334d0fecf1760a (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:07:23 2022 +0530
+
+    Soft reset
+
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)11752406 [sig] bash 1181! sigpacket::process: Suppressing signal 18 to win3
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git reset --soft HEAD~1
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.c
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.c
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ vi file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git add file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git add file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git commit -m "hard reset"
+[master f5896d8] hard reset
+ 1 file changed, 3 insertions(+)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit f5896d83a0e75f1b85c883159e84a85bc503304d (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:11:35 2022 +0530
+
+    hard reset
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+:      1 [sig] bash 1235! sigpacket::process: Suppressing signal 18 to win32 process (pid 4196)
+commit f5896d83a0e75f1b85c883159e84a85bc503304d (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:11:35 2022 +0530
+
+    hard reset
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+:
+commit f5896d83a0e75f1b85c883159e84a85bc503304d (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:11:35 2022 +0530
+
+    hard reset
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+commit f5896d83a0e75f1b85c883159e84a85bc503304d (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:11:35 2022 +0530
+
+    hard reset
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+:
+commit f5896d83a0e75f1b85c883159e84a85bc503304d (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:11:35 2022 +0530
+
+    hard reset
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+:
+commit f5896d83a0e75f1b85c883159e84a85bc503304d (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:11:35 2022 +0530
+
+    hard reset
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+:11167964 [sig] bash 1235! sigpacket::process: Suppressing signal 18 to win32 process (pid 4196)
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+^C
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git reset --hard HEAD~1
+HEAD is now at 9580af8 Update file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)      2 [sig] bash 1253! sigpacket::process: Suppressing signal 18 to win32 process (pid 9292)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c
+bash: $: command not found
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ $ cat file.c
+bash: $: command not found
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c
+Git Session 11 May
+Updated file
+Changes are made in remote repository
+Pull the changes
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6 (HEAD -> master, origin/master)
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)      1 [sig] bash 1278! sigpacket::process: Suppressing signal 18 to win32 process (pid 6508)
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+^C
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ vi file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git add file.c
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.c
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git commit -m "revert commit"
+[master 92cab83] revert commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 105.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Anusha-17/11May2022.git
+   9580af8..92cab83  master -> master
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (HEAD -> master, origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+:      1 [sig] bash 1327! sigpacket::process: Suppressing signal 18 to win32 process (pid 3908)
+:
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+(END)
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (HEAD -> master, origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+^C
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git revert^C
+git: 'revert^C' is not a git command. See 'git --help'.
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git revert ^C
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git revert 92cab832ea466ec4babf2a79c4543babea457e15
+[master defb4a1] Revert "revert commit"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ git log
+commit defb4a1d0bc1ab2abc3849427a9aac9b85bc5f74 (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:26:11 2022 +0530
+
+    Revert "revert commit"
+
+    This reverts commit 92cab832ea466ec4babf2a79c4543babea457e15.
+
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+commit defb4a1d0bc1ab2abc3849427a9aac9b85bc5f74 (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:26:11 2022 +0530
+
+    Revert "revert commit"
+
+    This reverts commit 92cab832ea466ec4babf2a79c4543babea457e15.
+
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+:      1 [sig] bash 1362! sigpacket::process: Suppressing signal 18 to win32 process (pid 3900)
+commit defb4a1d0bc1ab2abc3849427a9aac9b85bc5f74 (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:26:11 2022 +0530
+
+    Revert "revert commit"
+
+    This reverts commit 92cab832ea466ec4babf2a79c4543babea457e15.
+
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+ ^X
+commit defb4a1d0bc1ab2abc3849427a9aac9b85bc5f74 (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:26:11 2022 +0530
+
+    Revert "revert commit"
+
+    This reverts commit 92cab832ea466ec4babf2a79c4543babea457e15.
+
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+commit defb4a1d0bc1ab2abc3849427a9aac9b85bc5f74 (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:26:11 2022 +0530
+
+    Revert "revert commit"
+
+    This reverts commit 92cab832ea466ec4babf2a79c4543babea457e15.
+
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+commit defb4a1d0bc1ab2abc3849427a9aac9b85bc5f74 (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:26:11 2022 +0530
+
+    Revert "revert commit"
+
+    This reverts commit 92cab832ea466ec4babf2a79c4543babea457e15.
+
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+commit defb4a1d0bc1ab2abc3849427a9aac9b85bc5f74 (HEAD -> master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:26:11 2022 +0530
+
+    Revert "revert commit"
+
+    This reverts commit 92cab832ea466ec4babf2a79c4543babea457e15.
+
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+    Revert "revert commit"
+
+    This reverts commit 92cab832ea466ec4babf2a79c4543babea457e15.
+
+commit 92cab832ea466ec4babf2a79c4543babea457e15 (origin/master)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 18:21:24 2022 +0530
+
+    revert commit
+
+commit 9580af84dae12f5954f363a4f8a75784e2a11ad6
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:45:20 2022 +0530
+
+    Update file.c
+
+commit ffc52f01c3a168d2a1b13e8e2109360a8566cb38
+Author: Anusha-17 <98573933+Anusha-17@users.noreply.github.com>
+Date:   Mon May 16 17:32:47 2022 +0530
+
+    Update file.c
+
+:15738162 [sig] bash 1362! sigpacket::process: Suppressing signal 18 to win32 process (pid 3900)
+                15750387 [sig] bash 1362! sigpacket::process: Suppressing signal 18 to win32 process (pid 3900)
+                               15758454 [sig] bash 1362! sigpacket::process: Suppressing signal 18 to win32 process (pid 3900)
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+commit 18de0c9772137342e2bcf50479bb138fa610c8ed (b1)
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 17:09:26 2022 +0530
+
+    Updating the file.c
+
+commit d46e94c9b15e564716a18d9a7dfa5734d5bb0fdc
+Author: anusha <anusha.j@gmail.com>
+Date:   Mon May 16 16:14:38 2022 +0530
+
+    First commit
+
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$ cat file.c\
+>
+Git Session 11 May
+Updated file
+Changes are made in remote repository
+Pull the changes
+
+dell@DESKTOP-2D0A7NR MINGW64 ~/Desktop/11May2022 (master)
+$
